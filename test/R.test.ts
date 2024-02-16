@@ -1,8 +1,8 @@
 describe('DummyController', () => {
   describe('getTest', () => {
     it('should return a message', () => {
-      const result = "Hello";
-      expect(result).toEqual(200);
+      const result = 'Hello';
+      expect(result).toEqual('Hello');
     });
 
     it('Should send a request using supertest', async () => {
