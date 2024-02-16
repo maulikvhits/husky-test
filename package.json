@@ -8,7 +8,8 @@
     "start": "node dist/server.js",
     "dev": "nodemon src/server.ts",
     "lint": "eslint . --fix --max-warnings=0",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -23,9 +24,15 @@
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --cache --fix",
+    "*.--write": "prettier --write"
   }
 }
