@@ -1,7 +1,7 @@
 describe('DummyController', () => {
   describe('getTest', () => {
     it('should return a message', () => {
-      const result = 200;
+      const result = "Hello";
       expect(result).toEqual(200);
     });
 
